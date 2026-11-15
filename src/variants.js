@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
-import VariantPage from '../../site-variants/VariantPage.vue'
+import VariantPage from '../site-variants/VariantPage.vue'
 import athlete from './athlete'
 import { english, labels } from './locale'
 import ThemeToggle from './ThemeToggle.vue'
-import '../../site-variants/variants.css'
+import '../site-variants/variants.css'
 import './variants.css'
 
 const target = document.getElementById('app')
@@ -19,4 +19,3 @@ createApp(VariantPage, {
   design: target.dataset.design,
   imageBase,
 }).mount(target)
-
