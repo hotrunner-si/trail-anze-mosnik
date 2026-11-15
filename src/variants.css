@@ -1,0 +1,112 @@
+.single-sport .header-controls { display: flex; align-items: center; gap: .55rem; }
+.single-sport .header-controls .lang {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: .875rem;
+  font-weight: 700;
+}
+.single-sport .section-nav a:hover { text-decoration: underline; }
+
+/* Warm race programme with one featured result. */
+.anze-v2 {
+  --paper: #f9ede0; --ink: #2c1a15; --surface: #f1dac6; --line: #a87d6e;
+  --accent: #a83a29; --panel: #832e22; --panel-ink: #fff3e8;
+  --night: #251813; --night-surface: #3a251d; --night-accent: #ffad91;
+  --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+}
+.anze-v2 .variant-hero {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  align-items: stretch;
+  gap: 0;
+  background: var(--surface);
+  border-top: .55rem solid var(--panel);
+}
+.anze-v2 .cover { position: relative; grid-column: 2; grid-row: 1; }
+.anze-v2 .cover figcaption { position: absolute; bottom: 0; right: 0; padding: .4rem .75rem; background: var(--panel); color: var(--panel-ink); }
+.anze-v2 .hero-copy { grid-column: 1; grid-row: 1; align-self: center; padding: clamp(1.2rem, 4vw, 4rem); }
+.anze-v2 h1 { font-weight: 800; text-transform: uppercase; letter-spacing: -.02em; }
+.anze-v2 h1 span { display: block; }
+.anze-v2 .result-list li { padding-inline: clamp(.8rem, 3vw, 2.5rem); }
+.anze-v2 .result-list li:first-child { background: var(--panel); color: var(--panel-ink); }
+.anze-v2 .result-list li:first-child strong { color: inherit; font-size: clamp(2rem, 6vw, 5.25rem); }
+
+/* Dark Alpine photo feature with a staggered gallery. */
+.anze-v3 {
+  --paper: #12232c; --ink: #eefaff; --surface: #1f3744; --line: #6c95a8;
+  --accent: #a9e8ff; --panel: #afdbea; --panel-ink: #14313e;
+  --night: #071820; --night-surface: #142c39; --night-accent: #b2edff;
+  --shell: 92rem;
+}
+.anze-v3 .variant-hero { display: block; margin-top: 0; }
+.anze-v3 .cover { position: relative; }
+.anze-v3 .cover img { aspect-ratio: 2.5; }
+.anze-v3 .cover figcaption { position: absolute; inset: auto 0 0 auto; padding: .4rem .75rem; background: var(--paper); }
+.anze-v3 .hero-copy { max-width: 68rem; margin-inline: auto; padding-top: clamp(1rem, 3vw, 2rem); text-align: center; }
+.anze-v3 h1 { font-size: clamp(3.2rem, 9vw, 9rem); }
+.anze-v3 .intro { margin-inline: auto; }
+.anze-v3 .hero-links { justify-content: center; }
+.anze-v3 .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.5rem, 2vw, 1.75rem); }
+.anze-v3 .gallery-grid figure:nth-child(2) { margin-top: clamp(1rem, 4vw, 3rem); }
+.anze-v3 .photo-button img { aspect-ratio: 4 / 5; }
+.anze-v3 .result-section { width: min(100%, 56rem); margin-inline: auto; }
+
+/* Quiet editorial profile with the bio set as a lead paragraph. */
+.anze-v4 {
+  --paper: #f3f3f3; --ink: #202020; --surface: #e7e7e7; --line: #777;
+  --accent: #454545; --panel: #262626; --panel-ink: #fafafa;
+  --night: #1a1a1a; --night-surface: #303030; --night-accent: #ddd;
+  --display: 'Instrument Serif', Georgia, serif; --shell: 68rem;
+}
+.anze-v4 .variant-hero { grid-template-columns: minmax(0, .54fr) minmax(0, 1fr); align-items: start; padding-top: 1rem; border-top: 1px solid var(--line); }
+.anze-v4 .cover { max-width: 24rem; }
+.anze-v4 .cover img { aspect-ratio: 4 / 5; filter: grayscale(100%); }
+.anze-v4 h1 { font-weight: 400; font-size: clamp(3.5rem, 8.5vw, 8.5rem); }
+.anze-v4 h1 span:last-child { font-style: italic; }
+.anze-v4 .intro { max-width: 30ch; font: 400 clamp(1.45rem, 3vw, 2.55rem)/1.18 var(--display); }
+.anze-v4 .hero-links { border-top: 1px solid var(--line); padding-top: 1rem; }
+.anze-v4 .variant-content { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+.anze-v4 .gallery-grid { grid-template-columns: 1fr; }
+.anze-v4 .photo-button img { aspect-ratio: 2; }
+
+/* Colour-blocked dashboard with results beside a compact gallery. */
+.anze-v5 {
+  --paper: #e8e5ff; --ink: #23164f; --surface: #dcd4fd; --line: #8774ae;
+  --accent: #5833a5; --panel: #402089; --panel-ink: #effffc;
+  --night: #1c1531; --night-surface: #322546; --night-accent: #d5bcff;
+}
+.anze-v5 .variant-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; gap: 0; }
+.anze-v5 .cover { position: relative; overflow: hidden; border-radius: 1.5rem 0 0 1.5rem; }
+.anze-v5 .cover figcaption { position: absolute; bottom: 0; left: 0; padding: .4rem .75rem; background: #163b31; color: #e5fff3; }
+.anze-v5 .hero-copy { display: grid; align-content: center; background: #bdf5d8; color: #182f28; padding: clamp(1.25rem, 4vw, 3rem); border-radius: 0 1.5rem 1.5rem 0; }
+.anze-v5 .eyebrow, .anze-v5 .hero-links a:hover { color: #2b5d4a; }
+.anze-v5 h1 { font: 400 clamp(2.8rem, 6.5vw, 6.5rem)/.98 'Archivo Black', sans-serif; letter-spacing: -.065em; }
+.anze-v5 h1 span { display: block; }
+.anze-v5 .variant-content { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 1rem; }
+.anze-v5 .variant-content section { background: var(--surface); padding: clamp(1rem, 3vw, 2rem); border-radius: 1.25rem; }
+.anze-v5 .result-list li { grid-template-columns: 1fr; }
+.anze-v5 .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.anze-v5 .gallery-grid figure:first-child { grid-column: 1 / -1; }
+.anze-v5 .gallery-grid figure:first-child img { aspect-ratio: 2; }
+.anze-v5 .contact-block { border-radius: 1.25rem; }
+
+@media (max-width: 760px) {
+  .single-sport .variant-hero, .single-sport .variant-content { grid-template-columns: minmax(0, 1fr); }
+  .single-sport .header-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0 .5rem;
+    padding-top: .3rem;
+  }
+  .single-sport .header-controls { grid-column: 2; grid-row: 1; }
+  .single-sport .section-nav { grid-column: 1 / -1; grid-row: 2; flex-wrap: wrap; justify-content: space-between; }
+  .single-sport .section-nav a { padding-inline: .25rem; }
+  .single-sport [id] { scroll-margin-top: 6.5rem; }
+  .anze-v3 .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .anze-v3 .gallery-grid figure:first-child { grid-column: 1 / -1; }
+  .anze-v3 .gallery-grid figure:first-child img { aspect-ratio: 5 / 3; }
+  .anze-v3 .gallery-grid figure:nth-child(2) { margin-top: 0; }
+  .anze-v5 .cover { border-radius: 1.5rem 1.5rem 0 0; }
+  .anze-v5 .hero-copy { border-radius: 0 0 1.5rem 1.5rem; }
+}
