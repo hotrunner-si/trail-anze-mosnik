@@ -43,6 +43,12 @@ export const english = {
       ['1st', 'Ultra Trail Savinja 50 km · 2025', '5:49:47'],
       ['3rd', 'Knap Trail, T’ Sredna · 2026', '3:02:46 · men'],
       ['10th', 'Soča 25 KM · 2026', '2:42:02'],
+      ["24th","Kriška Gora Trail · Muflon · 2026","3:19:09"],
+      ["39th","Julian Alps Trail Run · Sky Trail 50K · 2025","6:09:54"],
+      ["44th","Eiger Ultra Trail · E101 · 2025","9:16:18"],
+      ["9th","Soča 25 KM · 2025","2:33:25"],
+      ["32nd","UTVV Legionar 30 km · 2025","3:32:59"],
+      ["203rd","Julian Alps Trail Run · Sky Trail 50K · 2024","7:54:48"],
     ],
     gallery: [
       { caption: 'Anže in the mountains', alt: 'Anže Mošnik in a windbreaker and sports glasses in front of mountain peaks' },
