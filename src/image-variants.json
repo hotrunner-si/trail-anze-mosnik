@@ -1,0 +1,226 @@
+{
+  "/images/anze-bernina-ledenik.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-bernina-ledenik.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 187420
+    },
+    "full": {
+      "src": "/images/optimized/anze-bernina-ledenik.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2422770
+    }
+  },
+  "/images/anze-jimmy-chilly.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-jimmy-chilly.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 152708
+    },
+    "full": {
+      "src": "/images/optimized/anze-jimmy-chilly.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 1958554
+    }
+  },
+  "/images/anze-jimmy-koren.jpg": {
+    "small": {
+      "src": "/images/optimized/anze-jimmy-koren.jpg.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 138414
+    },
+    "full": {
+      "src": "/images/optimized/anze-jimmy-koren.jpg.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2241878
+    }
+  },
+  "/images/anze-julijci-celada.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-julijci-celada.HEIC.small.webp",
+      "width": 960,
+      "height": 720,
+      "bytes": 157040
+    },
+    "full": {
+      "src": "/images/optimized/anze-julijci-celada.HEIC.full.webp",
+      "width": 3200,
+      "height": 2400,
+      "bytes": 1827888
+    }
+  },
+  "/images/anze-lago-livigno.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-lago-livigno.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 154920
+    },
+    "full": {
+      "src": "/images/optimized/anze-lago-livigno.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2033218
+    }
+  },
+  "/images/anze-livigno-kolo-2.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-livigno-kolo-2.HEIC.small.webp",
+      "width": 960,
+      "height": 720,
+      "bytes": 154386
+    },
+    "full": {
+      "src": "/images/optimized/anze-livigno-kolo-2.HEIC.full.webp",
+      "width": 3200,
+      "height": 2400,
+      "bytes": 2289086
+    }
+  },
+  "/images/anze-livigno-kolo.jpg": {
+    "small": {
+      "src": "/images/optimized/anze-livigno-kolo.jpg.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 122286
+    },
+    "full": {
+      "src": "/images/optimized/anze-livigno-kolo.jpg.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2038996
+    }
+  },
+  "/images/anze-passp-pordoi.jpg": {
+    "small": {
+      "src": "/images/optimized/anze-passp-pordoi.jpg.small.webp",
+      "width": 960,
+      "height": 720,
+      "bytes": 157280
+    },
+    "full": {
+      "src": "/images/optimized/anze-passp-pordoi.jpg.full.webp",
+      "width": 3200,
+      "height": 2400,
+      "bytes": 2416850
+    }
+  },
+  "/images/anze-piz-bernina.jpg": {
+    "small": {
+      "src": "/images/optimized/anze-piz-bernina.jpg.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 160276
+    },
+    "full": {
+      "src": "/images/optimized/anze-piz-bernina.jpg.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 3219928
+    }
+  },
+  "/images/anze-pizboe-1.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-pizboe-1.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 178772
+    },
+    "full": {
+      "src": "/images/optimized/anze-pizboe-1.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2380078
+    }
+  },
+  "/images/anze-sass-pordoi.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-sass-pordoi.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 141946
+    },
+    "full": {
+      "src": "/images/optimized/anze-sass-pordoi.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2012296
+    }
+  },
+  "/images/anze-seceda.jpg": {
+    "small": {
+      "src": "/images/optimized/anze-seceda.jpg.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 160014
+    },
+    "full": {
+      "src": "/images/optimized/anze-seceda.jpg.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2621718
+    }
+  },
+  "/images/anze-sella.jpg": {
+    "small": {
+      "src": "/images/optimized/anze-sella.jpg.small.webp",
+      "width": 960,
+      "height": 720,
+      "bytes": 171122
+    },
+    "full": {
+      "src": "/images/optimized/anze-sella.jpg.full.webp",
+      "width": 3200,
+      "height": 2400,
+      "bytes": 2940816
+    }
+  },
+  "/images/anze-tekma-zvoh.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-tekma-zvoh.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 157744
+    },
+    "full": {
+      "src": "/images/optimized/anze-tekma-zvoh.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 2286810
+    }
+  },
+  "/images/anze-tenerife-puscava.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-tenerife-puscava.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 129960
+    },
+    "full": {
+      "src": "/images/optimized/anze-tenerife-puscava.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 1858744
+    }
+  },
+  "/images/anze-v-gorah.HEIC": {
+    "small": {
+      "src": "/images/optimized/anze-v-gorah.HEIC.small.webp",
+      "width": 720,
+      "height": 960,
+      "bytes": 134326
+    },
+    "full": {
+      "src": "/images/optimized/anze-v-gorah.HEIC.full.webp",
+      "width": 2400,
+      "height": 3200,
+      "bytes": 1915252
+    }
+  }
+}

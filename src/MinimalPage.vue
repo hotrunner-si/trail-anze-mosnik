@@ -1,36 +1,50 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
+import ResponsiveImage from './ResponsiveImage.vue'
+import { gallery } from './gallery.js'
 import athlete from './athlete.js'
+import imageVariants from './image-variants.json'
 
 const props = defineProps({ version: String, imageBase: String })
-const isSplit = props.version === 'v2'
-const isCompact = props.version === 'v3'
+const isSplit = false
+const isCompact = props.version === 'v0'
 const compactMenu = [['trail', 'Trail tek']]
 if (athlete.skimo) compactMenu.push(['skimo', 'Skimo'])
-compactMenu.push(['contact', 'Kontakti'])
-const menu = isCompact
+compactMenu.push(['gallery', 'Galerija'], ['contact', 'Kontakti'])
+const menu = computed(() => {
+  const items = isCompact
   ? compactMenu
   : [['about', 'O meni'], ['results', 'Rezultati'], ['gallery', 'Galerija'], ['contact', 'Kontakt']]
+  return isCompact ? [['about', 'O meni'], ...items] : items
+})
 
 const active = ref('about')
 const sports = [{ id: 'trail', label: 'Trail tek', sourceLabel: 'Profil UTMB', ...athlete.trail }]
 if (athlete.skimo) {
   sports.push({ id: 'skimo', label: 'Skimo', sourceLabel: 'Rezultati PZS', ...athlete.skimo })
 }
-const photos = sports.flatMap(sport => sport.gallery.filter(photo => photo.file))
-const cover = photos[0]
+const photos = gallery.map(photo => {
+  const size = imageVariants['/images/' + photo.file].small
+  return { ...photo, portrait: size.height > size.width }
+})
+const cover = gallery.find(photo => photo.file === 'anze-v-gorah.HEIC') ?? gallery[0]
 const contacts = [
   { label: 'Instagram', url: athlete.contacts?.instagram },
   { label: 'Strava', url: athlete.contacts?.strava },
   { label: 'UTMB', url: athlete.trail.source },
   { label: 'E-pošta', url: athlete.contacts?.email && 'mailto:' + athlete.contacts.email },
 ].filter(link => link.url)
+
+function selectSection(id) {
+  active.value = active.value === id && isCompact ? 'about' : id
+}
 </script>
 
 <template>
-  <main class="minimal" :class="version">
+  <main class="minimal" :class="isCompact ? 'v3' : version">
     <header class="identity">
-      <img class="cover" :src="imageBase + cover.file" :alt="cover.alt" fetchpriority="high">
+      <ResponsiveImage class="cover" :src="imageBase + cover.file" :alt="cover.alt"
+        :style="{ objectPosition: cover.position }" fetchpriority="high" />
       <h1>
         <button v-if="isCompact" class="profile-name" type="button"
           :aria-pressed="active === 'about'" @click="active = 'about'">
@@ -42,9 +56,9 @@ const contacts = [
 
     <div class="content">
       <nav v-if="!isSplit" aria-label="Vsebina">
-        <button v-for="[id, label] in menu" :key="id" type="button"
-          :aria-pressed="active === id" @click="active = active === id && isCompact ? 'about' : id">
-          {{ label }}
+        <button v-for="[id, label] in menu" :key="id" :data-label="label" type="button"
+          :aria-pressed="active === id" @click="selectSection(id)">
+          <span class="nav-label">{{ label }}</span>
         </button>
       </nav>
 
@@ -56,7 +70,7 @@ const contacts = [
           <p>{{ athlete.trail.intro }}</p>
           <p v-if="athlete.skimo">{{ athlete.skimo.intro }}</p>
         </div>
-        <img :src="imageBase + cover.file" :alt="cover.alt" fetchpriority="high">
+        <ResponsiveImage :src="imageBase + cover.file" :alt="cover.alt" fetchpriority="high" />
       </section>
 
       <section v-if="isSplit || active === 'contact'" class="panel" aria-labelledby="contact-title">
@@ -89,8 +103,8 @@ const contacts = [
       <section v-if="isSplit || active === 'gallery'" class="panel" aria-labelledby="gallery-title">
         <h2 id="gallery-title">Galerija</h2>
         <div class="photos">
-          <figure v-for="photo in photos" :key="photo.file">
-            <img :src="imageBase + photo.file" :alt="photo.alt" loading="lazy">
+          <figure v-for="photo in photos" :key="photo.file" :class="{ 'photo-portrait': photo.portrait }">
+            <ResponsiveImage :src="imageBase + photo.file" :alt="photo.alt" loading="lazy" zoom />
             <figcaption>{{ photo.caption }}</figcaption>
           </figure>
         </div>
